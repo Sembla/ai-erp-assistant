@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "boundary": "aggregate-only",
+  "checks": [
+    {
+      "check": "raw field absent: dueDate",
+      "passed": true
+    },
+    {
+      "check": "raw field absent: status",
+      "passed": true
+    },
+    {
+      "check": "raw field absent: plannedEndDate",
+      "passed": true
+    },
+    {
+      "check": "raw field absent: progressPct",
+      "passed": true
+    },
+    {
+      "check": "raw field absent: orderId",
+      "passed": true
+    },
+    {
+      "check": "raw field absent: sku",
+      "passed": true
+    },
+    {
+      "check": "record identifier absent: PED-1001",
+      "passed": true
+    },
+    {
+      "check": "record identifier absent: PED-1002",
+      "passed": true
+    },
+    {
+      "check": "record identifier absent: PED-1003",
+      "passed": true
+    },
+    {
+      "check": "record identifier absent: PED-1004",
+      "passed": true
+    },
+    {
+      "check": "record identifier absent: PED-1005",
+      "passed": true
+    },
+    {
+      "check": "record identifier absent: OP-701",
+      "passed": true
+    },
+    {
+      "check": "record identifier absent: OP-702",
+      "passed": true
+    },
+    {
+      "check": "record identifier absent: OP-703",
+      "passed": true
+    }
+  ],
+  "passed": 14,
+  "failed": 0,
+  "contextShape": {
+    "referenceDate": "2026-08-24",
+    "metrics": {
+      "totalOrders": 5,
+      "openOrders": 3,
+      "delayedOrders": 2,
+      "delayedOrderValue": 30400,
+      "lowStockItems": 2,
+      "productionRisks": 2
+    },
+    "topCustomers": [
+      {
+        "customer": "Cliente Atlas",
+        "orderCount": 2,
+        "orderValue": 30400
+      },
+      {
+        "customer": "Cliente Cobalto",
+        "orderCount": 1,
+        "orderValue": 14200
+      },
+      {
+        "customer": "Cliente Boreal",
+        "orderCount": 1,
+        "orderValue": 8500
+      }
+    ],
+    "lowStockSummary": [
+      {
+        "name": "Painel MDF branco",
+        "current": 18,
+        "minimum": 20,
+        "unit": "chapas"
+      },
+      {
+        "name": "Corrediça telescópica",
+        "current": 24,
+        "minimum": 24,
+        "unit": "pares"
+      }
+    ]
+  }
+}

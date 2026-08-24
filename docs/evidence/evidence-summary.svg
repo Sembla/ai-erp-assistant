@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="640" viewBox="0 0 1440 640">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1"><stop stop-color="#061124"/><stop offset="0.62" stop-color="#071526"/><stop offset="1" stop-color="#10241c"/></linearGradient>
+  </defs>
+  <rect width="1440" height="640" fill="url(#bg)"/>
+  <text x="64" y="74" fill="#8cff27" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3">HENRIQUE SEMBLA · REPRODUCIBLE PORTFOLIO EVIDENCE</text>
+  <text x="64" y="158" fill="#f3f7ff" font-family="Arial, sans-serif" font-size="58" font-weight="700">AI ERP Assistant</text>
+  <text x="64" y="210" fill="#9fc5e8" font-family="Arial, sans-serif" font-size="25">Deterministic operational analysis · aggregate-only LLM boundary · read-only public demo</text>
+  <text x="64" y="254" fill="#6e91b2" font-family="Arial, sans-serif" font-size="18">Reference date 2026-08-24 · fictional records · no production ERP connection</text>
+  <g transform="translate(64 310)">
+      <rect width="290" height="168" rx="20" fill="#0b1a2e" stroke="#284460"/>
+      <text x="24" y="52" fill="#8fb9df" font-size="20">Evaluation fixtures</text>
+      <text x="24" y="118" fill="#8cff27" font-size="46" font-weight="700">30/30</text>
+    </g>
+<g transform="translate(394 310)">
+      <rect width="290" height="168" rx="20" fill="#0b1a2e" stroke="#284460"/>
+      <text x="24" y="52" fill="#8fb9df" font-size="20">Privacy checks</text>
+      <text x="24" y="118" fill="#8cff27" font-size="46" font-weight="700">14/14</text>
+    </g>
+<g transform="translate(724 310)">
+      <rect width="290" height="168" rx="20" fill="#0b1a2e" stroke="#284460"/>
+      <text x="24" y="52" fill="#8fb9df" font-size="20">API checks</text>
+      <text x="24" y="118" fill="#8cff27" font-size="46" font-weight="700">4/4</text>
+    </g>
+<g transform="translate(1054 310)">
+      <rect width="290" height="168" rx="20" fill="#0b1a2e" stroke="#284460"/>
+      <text x="24" y="52" fill="#8fb9df" font-size="20">Data source</text>
+      <text x="24" y="118" fill="#8cff27" font-size="46" font-weight="700">Synthetic</text>
+    </g>
+  <text x="64" y="556" fill="#f3f7ff" font-family="Arial, sans-serif" font-size="21">Every artifact below is regenerated from the committed code and verified by GitHub Actions.</text>
+  <text x="64" y="594" fill="#6e91b2" font-family="Arial, sans-serif" font-size="17">Live demo: https://ai-erp-assistant-2ehm.onrender.com</text>
+</svg>

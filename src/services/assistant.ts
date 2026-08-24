@@ -39,7 +39,7 @@ export function answerLocally(
     };
   }
 
-  if (/estoque|material|falta|stock/.test(clean)) {
+  if (/estoque|material|falta|stock|item|minimo/.test(clean)) {
     const items = snapshot.lowStockItems
       .map((item) => `${item.name}: ${item.current}/${item.minimum} ${item.unit}`)
       .join("; ");

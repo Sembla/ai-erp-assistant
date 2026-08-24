@@ -9,6 +9,7 @@
   "scripts": {
     "start": "node src/server.ts",
     "test": "node --test tests/*.test.ts",
-    "check": "node --check src/server.ts && node --check src/services/analytics.ts && node --check src/services/assistant.ts && node --check src/services/llm.ts"
+    "check": "node --check src/server.ts && node --check src/services/analytics.ts && node --check src/services/assistant.ts && node --check src/services/llm.ts && node --check scripts/generate-evidence.mjs",
+    "evidence": "node scripts/generate-evidence.mjs"
   }
 }

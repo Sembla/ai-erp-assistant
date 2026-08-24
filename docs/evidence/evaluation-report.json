@@ -1,0 +1,319 @@
+{
+  "schemaVersion": 1,
+  "dataSource": "synthetic",
+  "referenceDate": "2026-08-24",
+  "fixtureCount": 30,
+  "passed": 30,
+  "failed": 0,
+  "results": [
+    {
+      "question": "Quais pedidos estão atrasados?",
+      "expectedIntent": "delayed_orders",
+      "requiredFacts": [
+        "PED-1001",
+        "PED-1004",
+        "R$ 30.400,00"
+      ],
+      "actualIntent": "delayed_orders",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Existem atrasos hoje?",
+      "expectedIntent": "delayed_orders",
+      "requiredFacts": [
+        "2 pedido(s)",
+        "PED-1001"
+      ],
+      "actualIntent": "delayed_orders",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Mostre os pedidos fora do prazo",
+      "expectedIntent": "delayed_orders",
+      "requiredFacts": [
+        "PED-1004"
+      ],
+      "actualIntent": "delayed_orders",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Qual é o valor dos pedidos em atraso?",
+      "expectedIntent": "delayed_orders",
+      "requiredFacts": [
+        "R$ 30.400,00"
+      ],
+      "actualIntent": "delayed_orders",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Há algum delay nos pedidos?",
+      "expectedIntent": "delayed_orders",
+      "requiredFacts": [
+        "2 pedido(s)"
+      ],
+      "actualIntent": "delayed_orders",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Como está o estoque?",
+      "expectedIntent": "inventory_risk",
+      "requiredFacts": [
+        "Painel MDF branco",
+        "Corrediça telescópica"
+      ],
+      "actualIntent": "inventory_risk",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Quais materiais estão em falta?",
+      "expectedIntent": "inventory_risk",
+      "requiredFacts": [
+        "2 item(ns)"
+      ],
+      "actualIntent": "inventory_risk",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Mostre o estoque crítico",
+      "expectedIntent": "inventory_risk",
+      "requiredFacts": [
+        "18/20 chapas"
+      ],
+      "actualIntent": "inventory_risk",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Existe risco de stock?",
+      "expectedIntent": "inventory_risk",
+      "requiredFacts": [
+        "24/24 pares"
+      ],
+      "actualIntent": "inventory_risk",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Quais itens atingiram o mínimo?",
+      "expectedIntent": "inventory_risk",
+      "requiredFacts": [
+        "Painel MDF branco"
+      ],
+      "actualIntent": "inventory_risk",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Existe risco na produção?",
+      "expectedIntent": "production_risk",
+      "requiredFacts": [
+        "OP-701",
+        "OP-702"
+      ],
+      "actualIntent": "production_risk",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Como está a linha de produção?",
+      "expectedIntent": "production_risk",
+      "requiredFacts": [
+        "72%",
+        "41%"
+      ],
+      "actualIntent": "production_risk",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Quais ordens de produção exigem atenção?",
+      "expectedIntent": "production_risk",
+      "requiredFacts": [
+        "2 ordem(ns)"
+      ],
+      "actualIntent": "production_risk",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Há problema na operação?",
+      "expectedIntent": "production_risk",
+      "requiredFacts": [
+        "OP-701"
+      ],
+      "actualIntent": "production_risk",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Mostre os riscos de producao",
+      "expectedIntent": "production_risk",
+      "requiredFacts": [
+        "OP-702"
+      ],
+      "actualIntent": "production_risk",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Qual cliente tem maior volume?",
+      "expectedIntent": "top_customer",
+      "requiredFacts": [
+        "Cliente Atlas",
+        "R$ 30.400,00"
+      ],
+      "actualIntent": "top_customer",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Quem é o maior cliente?",
+      "expectedIntent": "top_customer",
+      "requiredFacts": [
+        "Cliente Atlas"
+      ],
+      "actualIntent": "top_customer",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Mostre o volume por cliente",
+      "expectedIntent": "top_customer",
+      "requiredFacts": [
+        "2 pedido(s)"
+      ],
+      "actualIntent": "top_customer",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Qual cliente lidera a carteira?",
+      "expectedIntent": "top_customer",
+      "requiredFacts": [
+        "Cliente Atlas"
+      ],
+      "actualIntent": "top_customer",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Cliente com maior valor",
+      "expectedIntent": "top_customer",
+      "requiredFacts": [
+        "R$ 30.400,00"
+      ],
+      "actualIntent": "top_customer",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Qual o valor da carteira?",
+      "expectedIntent": "order_value",
+      "requiredFacts": [
+        "R$ 59.900,00",
+        "R$ 30.400,00"
+      ],
+      "actualIntent": "order_value",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Quanto representa o faturamento simulado?",
+      "expectedIntent": "order_value",
+      "requiredFacts": [
+        "R$ 59.900,00"
+      ],
+      "actualIntent": "order_value",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Mostre o valor total dos pedidos",
+      "expectedIntent": "order_value",
+      "requiredFacts": [
+        "R$ 59.900,00"
+      ],
+      "actualIntent": "order_value",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Como está a carteira?",
+      "expectedIntent": "order_value",
+      "requiredFacts": [
+        "R$ 30.400,00"
+      ],
+      "actualIntent": "order_value",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Qual o valor associado aos atrasos?",
+      "expectedIntent": "delayed_orders",
+      "requiredFacts": [
+        "R$ 30.400,00"
+      ],
+      "actualIntent": "delayed_orders",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Faça um resumo operacional",
+      "expectedIntent": "operational_summary",
+      "requiredFacts": [
+        "3 pedido(s) aberto(s)",
+        "2 em atraso"
+      ],
+      "actualIntent": "operational_summary",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "O que devo observar hoje?",
+      "expectedIntent": "operational_summary",
+      "requiredFacts": [
+        "2 item(ns) com estoque crítico"
+      ],
+      "actualIntent": "operational_summary",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Resumo do cenário",
+      "expectedIntent": "operational_summary",
+      "requiredFacts": [
+        "2 risco(s) de produção"
+      ],
+      "actualIntent": "operational_summary",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Situação geral",
+      "expectedIntent": "operational_summary",
+      "requiredFacts": [
+        "2026-08-24"
+      ],
+      "actualIntent": "operational_summary",
+      "missingFacts": [],
+      "passed": true
+    },
+    {
+      "question": "Visão executiva",
+      "expectedIntent": "operational_summary",
+      "requiredFacts": [
+        "3 pedido(s) aberto(s)"
+      ],
+      "actualIntent": "operational_summary",
+      "missingFacts": [],
+      "passed": true
+    }
+  ]
+}

@@ -1,10 +1,33 @@
 # AI ERP Assistant
 
 [![Tests](https://github.com/Sembla/ai-erp-assistant/actions/workflows/tests.yml/badge.svg)](https://github.com/Sembla/ai-erp-assistant/actions/workflows/tests.yml)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Open-2ea44f?style=flat)](https://ai-erp-assistant-2ehm.onrender.com/)
 
 An executable portfolio prototype for querying fictional ERP-like operational data in Brazilian Portuguese. It combines deterministic analytics, a local question router, a dependency-free Node.js API and an optional LLM explanation mode.
 
 > All orders, customers, inventory items and production records are synthetic. The application is not connected to a real ERP and cannot execute operational actions.
+
+## Live demonstration
+
+**[Open the read-only public demo](https://ai-erp-assistant-2ehm.onrender.com/)**
+
+The free demonstration instance can take approximately 50 seconds to wake after a period of inactivity. Local deterministic mode remains available without an external model or API key.
+
+## Reproducible evidence
+
+![AI ERP Assistant evidence summary](docs/evidence/evidence-summary.svg)
+
+The evidence below is generated from the committed code, fictional fixtures and an ephemeral local API server. GitHub Actions regenerates every artifact and fails if the committed reports are stale or any check fails.
+
+| Claim | Reproducible evidence |
+|---|---|
+| Deterministic question routing | [30/30 fixed evaluation fixtures](docs/evidence/evaluation-report.json) |
+| Aggregate-only LLM boundary | [14/14 privacy checks](docs/evidence/privacy-report.json) |
+| Executable HTTP behavior | [Health, summary and assistant API examples](docs/evidence/api-examples.json) |
+| Browser experience | [Read-only live demonstration](https://ai-erp-assistant-2ehm.onrender.com/) |
+| Regression protection | 14 automated tests and GitHub Actions |
+
+These results describe a controlled synthetic evaluation. They are not claims of production accuracy, ERP integration or business impact.
 
 ## Problem
 
@@ -95,9 +118,10 @@ The browser never receives the API key. The server sends only calculated metrics
 ```bash
 npm run check
 npm test
+npm run evidence
 ```
 
-The test suite covers calculations, ordering, invalid dates, the aggregate-only LLM boundary, accent-insensitive intent classification, question limits, API routes and LLM fallback.
+The test suite covers calculations, ordering, invalid dates, the aggregate-only LLM boundary, accent-insensitive intent classification, question limits, API routes, LLM fallback and deterministic evidence generation.
 
 ## Intentional scope
 
@@ -115,7 +139,7 @@ This is a small executable prototype, not an enterprise ERP platform. It deliber
 - Add authentication and role-based authorization.
 - Add immutable audit logs without storing prompts containing sensitive data.
 - Add evaluation fixtures for LLM faithfulness and refusal behavior.
-- Deploy a read-only demonstration with synthetic data.
+- Add versioned adapters for a future authorized ERP integration.
 
 ## Author
 

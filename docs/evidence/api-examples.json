@@ -1,0 +1,130 @@
+{
+  "health": {
+    "status": "ok",
+    "dataSource": "synthetic"
+  },
+  "summary": {
+    "data": {
+      "referenceDate": "2026-08-24",
+      "totalOrders": 5,
+      "openOrders": 3,
+      "delayedOrders": [
+        {
+          "id": "PED-1001",
+          "customer": "Cliente Atlas",
+          "dueDate": "2026-08-20",
+          "daysLate": 4,
+          "value": 18000
+        },
+        {
+          "id": "PED-1004",
+          "customer": "Cliente Atlas",
+          "dueDate": "2026-08-22",
+          "daysLate": 2,
+          "value": 12400
+        }
+      ],
+      "totalOrderValue": 59900,
+      "delayedOrderValue": 30400,
+      "lowStockItems": [
+        {
+          "sku": "MAT-001",
+          "name": "Painel MDF branco",
+          "current": 18,
+          "minimum": 20,
+          "unit": "chapas"
+        },
+        {
+          "sku": "MAT-003",
+          "name": "Corrediça telescópica",
+          "current": 24,
+          "minimum": 24,
+          "unit": "pares"
+        }
+      ],
+      "productionRisks": [
+        {
+          "id": "OP-701",
+          "orderId": "PED-1001",
+          "line": "Corte e usinagem",
+          "progressPct": 72,
+          "plannedEndDate": "2026-08-23",
+          "reason": "linked order is late"
+        },
+        {
+          "id": "OP-702",
+          "orderId": "PED-1004",
+          "line": "Montagem",
+          "progressPct": 41,
+          "plannedEndDate": "2026-08-24",
+          "reason": "linked order is late"
+        }
+      ],
+      "customerVolumes": [
+        {
+          "customer": "Cliente Atlas",
+          "orderCount": 2,
+          "orderValue": 30400
+        },
+        {
+          "customer": "Cliente Cobalto",
+          "orderCount": 1,
+          "orderValue": 14200
+        },
+        {
+          "customer": "Cliente Boreal",
+          "orderCount": 1,
+          "orderValue": 8500
+        },
+        {
+          "customer": "Cliente Delta",
+          "orderCount": 1,
+          "orderValue": 6800
+        }
+      ]
+    },
+    "dataSource": "synthetic"
+  },
+  "answers": [
+    {
+      "question": "Quais pedidos estão atrasados?",
+      "response": {
+        "data": {
+          "mode": "local",
+          "intent": "delayed_orders",
+          "answer": "2 pedido(s) em atraso: PED-1001 (4 dia(s), R$ 18.000,00); PED-1004 (2 dia(s), R$ 12.400,00). Valor associado: R$ 30.400,00."
+        }
+      }
+    },
+    {
+      "question": "Como está o estoque?",
+      "response": {
+        "data": {
+          "mode": "local",
+          "intent": "inventory_risk",
+          "answer": "2 item(ns) no nível mínimo ou abaixo: Painel MDF branco: 18/20 chapas; Corrediça telescópica: 24/24 pares."
+        }
+      }
+    },
+    {
+      "question": "Existe risco na produção?",
+      "response": {
+        "data": {
+          "mode": "local",
+          "intent": "production_risk",
+          "answer": "2 ordem(ns) de produção exigem atenção: OP-701/PED-1001 — 72%; OP-702/PED-1004 — 41%."
+        }
+      }
+    },
+    {
+      "question": "Faça um resumo operacional",
+      "response": {
+        "data": {
+          "mode": "local",
+          "intent": "operational_summary",
+          "answer": "Resumo em 2026-08-24: 3 pedido(s) aberto(s), 2 em atraso, 2 item(ns) com estoque crítico e 2 risco(s) de produção."
+        }
+      }
+    }
+  ]
+}

@@ -29,6 +29,12 @@ The evidence below is generated from the committed code, fictional fixtures and 
 
 These results describe a controlled synthetic evaluation. They are not claims of production accuracy, ERP integration or business impact.
 
+### Verified live interface
+
+![Live AI ERP Assistant answering a delayed-order question](docs/evidence/live-demo.jpg)
+
+This capture comes from the deployed application after a real browser request in deterministic local mode. The visible order identifiers and values belong exclusively to the fictional public dataset.
+
 ## Problem
 
 Operational teams frequently need quick answers about late orders, inventory shortages, production risk and customer volume. A useful assistant should continue working without an external model and should not send raw ERP rows to an LLM by default.

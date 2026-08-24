@@ -1,0 +1,14 @@
+{
+  "name": "ai-erp-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node src/server.ts",
+    "test": "node --test tests/*.test.ts",
+    "check": "node --check src/server.ts && node --check src/services/analytics.ts && node --check src/services/assistant.ts && node --check src/services/llm.ts"
+  }
+}

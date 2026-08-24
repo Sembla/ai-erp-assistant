@@ -100,7 +100,8 @@ export function createAppServer() {
 const invokedPath = process.argv[1] ? pathToFileURL(process.argv[1]).href : "";
 if (import.meta.url === invokedPath) {
   const port = Number(process.env.PORT || 3001);
-  createAppServer().listen(port, "127.0.0.1", () => {
-    console.log(`AI ERP Assistant running at http://127.0.0.1:${port}`);
+  const host = process.env.HOST || "0.0.0.0";
+  createAppServer().listen(port, host, () => {
+    console.log(`AI ERP Assistant running at http://${host}:${port}`);
   });
 }
